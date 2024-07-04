@@ -1,0 +1,237 @@
+/* body {
+  font-family: "Cairo", sans-serif;
+  /* background: linear-gradient(45deg, #243b65, #243b55); */
+  /* background-repeat: no-repeat;
+  background-size: auto;
+  /* margin: 0; */
+  /* min-height: 4000px;
+  box-sizing: border-box;
+} */ 
+
+
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #242f3f, #4e4e50);
+  color: #fff;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+.header-container {
+  width: 100%;
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 300px;
+  height: auto;
+  opacity: 0.8;
+  user-select: none;
+}
+
+.header-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.about, .video, .contact {
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 800px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+h2 {
+  color: #ffdd57;
+}
+
+.phone {
+  font-size: 1.5em;
+  color: #ff416c;
+  font-weight: bold;
+}
+
+.phone::selection {
+  background-color: #ff416c;
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #ff416c;
+  font-size: 2em;
+  margin: 0 10px;
+  transition: color 0.3s;
+  user-select: none;
+}
+
+.social-icon:hover {
+  color: #ffdd57;
+}
+
+footer {
+  background: #242f3f;
+  padding: 10px 0;
+  color: #aaa;
+}
+
+footer p {
+  margin: 0;
+}
+
+.about:hover, .video:hover, .contact:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.about:hover h2, .video:hover h2, .contact:hover h2 {
+  color: #ff416c;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff416c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition:  0.3s;
+}
+
+#back-to-top:hover {
+  background: #f00505;
+}
+.show {
+  display: block !important;
+  /* إظهار الزر عند إضافة الكلاس show */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 480px) {
+  nav ul li {
+      margin-left: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 10px;}
+
+  nav .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffdd57;
+  }
+}
